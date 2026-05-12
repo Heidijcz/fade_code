@@ -122,12 +122,12 @@ def train(net, loader_train, loader_test, optimizer, criterion):
         if step % len(loader_train) == 0:
             epoch = int(step / len(loader_train))
             total_epochs = opt.epochs
-            if epoch < int(total_epochs * 0.4):
+            if epoch < int(total_epochs * 0.):
                 eval_every = 10
-            elif epoch < int(total_epochs * 0.5):
-                eval_every = 10
+            elif epoch < int(total_epochs * 0.8):
+                eval_every = 5
             elif epoch < int(total_epochs * 0.9):
-                eval_every = 10
+                eval_every = 1
             else:
                 eval_every = 1
             if epoch % eval_every != 0:
