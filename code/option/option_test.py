@@ -5,8 +5,8 @@ import os
 parser = argparse.ArgumentParser()
 parser.add_argument('--exp_dir', type=str, default=r'../experiments/test')
 parser.add_argument('--dataset', type=str, default='snow100k')
-parser.add_argument('--val_snow_dir', type=str, default=r"..\datasets\Snow100K\realistic")
-parser.add_argument('--val_gt_dir', type=str, default=r"..\datasets\Snow100K_small\test\Snow100K-L\gt")
+parser.add_argument('--val_snow_dir', type=str, default=r"..\datasets\Snow100K\test\Snow100K-L\synthetic")
+parser.add_argument('--val_gt_dir', type=str, default=r"..\datasets\Snow100K\test\Snow100K-L\gt")
 
 parser.add_argument('--model_name', type=str, default='fade')
 parser.add_argument('--saved_infer_dir', type=str, default='saved_infer_dir')
