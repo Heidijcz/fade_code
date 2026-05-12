@@ -1,0 +1,13 @@
+torch==2.8.0
+torchmetrics==1.8.2
+torchaudio==2.8.0
+
+tqdm
+timm==1.0.26
+matplotlib
+opencv-python
+pyiqa
+einops
+
+
+
